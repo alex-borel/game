@@ -1,0 +1,136 @@
+    body {
+        background-image: url(../img/stair.jpg);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        position: relative;
+        border: 1px solid red;
+    }
+
+    .settings {
+        color: #ffffff;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        border: 2px solid #ffffff;
+        padding: 10px;
+    }
+
+    .control {
+        margin-top: 20px;
+    }
+
+    .control h3 {
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .item-radio {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .radio-indicator {
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px solid red;
+        border-radius: 50%;
+        left: 0;
+        top: 0px;
+    }
+
+    input[type="radio"]:checked+.radio-indicator::before {
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+        background-color: red;
+    }
+
+    .speed {
+        margin-top: 30px;
+    }
+
+    .speed h3 {
+        margin-bottom: 20px;
+    }
+
+    .sound {
+        margin-top: 30px;
+    }
+
+    .sound h3 {
+        margin-bottom: 20px;
+    }
+
+    .info {
+        padding: 10px;
+        border: 2px solid #ffffff;
+        position: absolute;
+        color: #ffffff;
+        top: 100px;
+        right: 40px;
+        text-align: center;
+    }
+
+    .info h3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .space {
+        margin-top: 0;
+    }
+
+    .info img {
+        margin-left: 25px;
+        display: block;
+    }
+
+    .info button {
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;
+        background-color: #ffffff;
+        cursor: pointer;
+        border: 2px solid red;
+        outline: none;
+        text-transform: uppercase;
+        color: #000000;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    .info button:hover {
+        background-color: red;
+        color: #ffffff;
+    }
+
+    canvas {
+        position: absolute;
+        left: 50%;
+        margin-top: 60px;
+        margin-left: -450px;
+        border: 3px solid red;
+        border-radius: 14px;
+        background-color: black;
+        cursor: pointer;
+    }
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Arkanoid</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/tab_new.ico">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="settings">
+			<h2>Settings</h2>
+			<div class="control">
+				<h3>Input control</h3>
+				<label class="item-radio">
+					<input type="radio" name="control" id="keyboard" checked>
+					<span class="radio-indicator"></span>
+					Keyboard
+				</label>
+				<label class="item-radio">
+					<input type="radio" name="control" id="mouse">
+					<span class="radio-indicator"></span>
+					Mouse
+				</label>
+			</div>
+			<div class="speed">
+				<h3>Speed of ball</h3>
+				<label class="item-radio">
+					<input type="radio" name="speed" id="high">
+					<span class="radio-indicator"></span>
+					High speed
+				</label>
+				<label class="item-radio">
+					<input type="radio" name="speed" id="medium" checked>
+					<span class="radio-indicator"></span>
+					Medium speed
+				</label>
+				<label class="item-radio">
+					<input type="radio" name="speed" id="low">
+					<span class="radio-indicator"></span>
+					Low speed
+				</label>
+			</div>
+			<div class="sound">
+				<h3>Sound of game</h3>
+				<label class="item-radio">
+					<input type="radio" name="sound" id="sound-on" checked>
+					<span class="radio-indicator"></span>
+					Sound On
+				</label>
+				<label class="item-radio">
+					<input type="radio" name="sound" id="sound-off">
+					<span class="radio-indicator"></span>
+					Sound Off
+				</label>
+			</div>
+		</div>
+
+		<div class="info">
+			<h2>About game</h2>
+			<h3>Start game</h3>
+			<img src="img/space.jpg" alt="Space" width="80" height="30">
+			<h3>Restart game</h3>
+			<button id="restart">Restart</button>
+		</div>
+	</div>
+
+
+
+	<script src="./dist/bundle.js"></script>
+</body>
+
+</html>
+
